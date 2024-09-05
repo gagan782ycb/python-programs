@@ -1,0 +1,16 @@
+# find a number in a list
+l1=[]
+num=int(input("Enter the size of list"))
+for i in range(0,num):
+    ele=int(input())
+    l1.append(ele)
+n=int(input("enter the number to be search"))
+flag=False
+for i in l1:
+    if(i==n):
+        flag=True
+        break
+if(flag==True):
+    print(n,"is find")    
+else:
+    print(n,"is not find")
